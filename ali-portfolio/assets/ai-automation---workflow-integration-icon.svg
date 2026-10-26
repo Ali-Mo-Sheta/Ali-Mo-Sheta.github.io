@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="n8n-node-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6d5a" />
+      <stop offset="100%" stop-color="#e14c38" />
+    </linearGradient>
+    <linearGradient id="n8n-sub-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Canvas Border Frame -->
+  <rect x="18" y="18" width="84" height="84" rx="16" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" />
+
+  <!-- Connecting Workflow Lines / Paths (n8n Connecting Flow Style) -->
+  <path d="M 38 42 L 60 42 C 72 42 72 78 82 78 L 84 78" fill="none" stroke="#ff6d5a" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 38 78 L 52 78 C 60 78 60 42 68 42 L 82 42" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3" />
+
+  <!-- Primary Trigger / Webhook Node (n8n Style Node Capsule) -->
+  <g transform="translate(38, 42)">
+    <rect x="-14" y="-12" width="28" height="24" rx="8" fill="#131a26" stroke="#ff6d5a" stroke-width="2" />
+    <circle cx="0" cy="0" r="4" fill="#ff6d5a" />
+  </g>
+
+  <!-- Node 2 (Sub Action Workflow Node) -->
+  <g transform="translate(38, 78)">
+    <rect x="-12" y="-10" width="24" height="20" rx="6" fill="#131a26" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="3" fill="#60a5fa" />
+  </g>
+
+  <!-- Center Integration Hub Node (n8n Style Connection Node) -->
+  <g transform="translate(60, 42)">
+    <circle r="7" fill="#131a26" stroke="#3b82f6" stroke-width="2" />
+    <circle r="2.5" fill="#3b82f6" />
+  </g>
+
+  <!-- Primary Action Output Node (n8n Style Main Red Node) -->
+  <g transform="translate(84, 78)">
+    <rect x="-14" y="-12" width="28" height="24" rx="8" fill="url(#n8n-node-grad)" />
+    <!-- White Inner Symbol for Action -->
+    <path d="M -4 -2 L 0 2 L 5 -3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Secondary Output Node -->
+  <g transform="translate(82, 42)">
+    <rect x="-12" y="-10" width="24" height="20" rx="6" fill="#131a26" stroke="#ff6d5a" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="3" fill="#ff6d5a" />
+  </g>
+
+  <!-- Small Flow Port Dots (Node Inputs & Outputs) -->
+  <circle cx="24" cy="42" r="2.5" fill="#ff6d5a" />
+  <circle cx="98" cy="78" r="2.5" fill="#ff6d5a" />
+</svg>
